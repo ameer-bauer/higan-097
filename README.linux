@@ -1,0 +1,27 @@
+Some Library Requirements for Building (Listed as Debian Packages Below)
+-----
+g++-4.9
+libgtk2.0-dev
+libgtksourceview2.0-dev
+libudev-dev
+libsdl1.2-dev
+libao-dev
+libopenal-dev
+
+Build Instructions for Higan
+-----
+From higan-0.97/higan/ run:
+ make
+
+Resolve any errors by intstalling any required librabries that are missing.
+
+From higan-0.97/higan/out/ run:
+ higan
+
+Build Instructions for Icarus
+-----
+From higan-0.97/icarus/ run:
+ make
+
+From higan-0.97/icarus/out/ run:
+ icarus
