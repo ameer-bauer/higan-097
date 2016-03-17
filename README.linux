@@ -9,7 +9,7 @@ libao-dev
 libopenal-dev
 libpulse-dev
 
-Build Instructions for Higan
+Build Instructions for Higan (Emulator)
 -----
 From higan-0.97/higan/ run:
  make
@@ -19,7 +19,7 @@ Resolve any errors by intstalling any required librabries that are missing.
 From higan-0.97/higan/out/ run:
  higan
 
-Build Instructions for Icarus
+Build Instructions for Icarus (ROM Import Tool)
 -----
 From higan-0.97/icarus/ run:
  make
