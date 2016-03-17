@@ -7,6 +7,7 @@ libudev-dev
 libsdl1.2-dev
 libao-dev
 libopenal-dev
+libpulse-dev
 
 Build Instructions for Higan
 -----
