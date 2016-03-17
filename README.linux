@@ -9,20 +9,28 @@ libao-dev
 libopenal-dev
 libpulse-dev
 
+NOTE:You have to build both higan and icarus for this emulator to function.
+     Once built, use the icarus tool to import your ROMs to the higan preferred format.
+
 Build Instructions for Higan (Emulator)
 -----
 From higan-0.97/higan/ run:
  make
-
-Resolve any errors by intstalling any required librabries that are missing.
-
-From higan-0.97/higan/out/ run:
- higan
+ make install
 
 Build Instructions for Icarus (ROM Import Tool)
 -----
 From higan-0.97/icarus/ run:
  make
+ make install
 
-From higan-0.97/icarus/out/ run:
- icarus
+Running Higan
+-----
+Add The following directories to your path:
+ /home/<user that built higan>/.local
+ /home/<user that built higan>/.local/bin
+
+Enjoy this awesome emulator by running:
+ higan
+ 
+Thank you to Byuu for the wonderful emulator! <byuu.org>
