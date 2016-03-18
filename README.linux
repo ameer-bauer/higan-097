@@ -13,6 +13,10 @@ libao-dev
 libopenal-dev
 libpulse-dev
 
+NOTE:g++ 4.9 is optional if you have g++ > 4.7 and change the make flags;
+     see make options towards the end of this document.  These build
+     procedures have been tested with g++ 4.9.
+     
 NOTE:You have to build both higan and icarus for this emulator to
      function.  Once built, use the icarus tool to import your ROMs
      to the higan preferred format.
@@ -54,6 +58,15 @@ NOTE:More reliable audio results seem to come with using
      "PulseAudioSimple" in the "Advanced Configurations".
      (assuming you are using PulseAudio in your environment)
 
+NOTE:In testing, the OpenGL and SDL modes seem to be the best performing,
+     XShm appears to be the most universally accepted video mode if you
+     run into issues.
+     
+NOTE:Higan loads its startup configurations from the following file:
+     /home/<user that built higan>/.local/higan/settings.bml
+     You can modify the video mode here, or just clear the value, if an
+     incompatible video mode is selected and higan crashes on statrup.
+
 **************
 *Make Options*
 **************
@@ -63,14 +76,28 @@ Run one of the following make commands from higan-097/higan/:
  make profile=accuracy
  make profile=balanced
  make profile=performance
- 
-NOTE:The default profile is accuracy.
+
+NOTE:The default emulation profile is set to 'accuracy'.
+
+Change the Compiler Version
+----
+Run the folling command to use your current version of g++:
+ make compiler=g++
 
 Enable Higan Console Mode
 ----
-Before making higan, uncomment the "console:=true" line in:
- higan-097/higan/GNUMakefile
- 
+Run the following to enable higan console mode:
+ make console=true
+
+NOTE:Optionally, before making higan, uncomment the "console:=true" line
+     in the make file located at higan-097/higan/GNUMakefile
+
+Example Make Options
+----
+Compile higan with a 'balanced' emultion profile with console support
+from the higan-097/higan/ directory run:
+ make profile=balanced console=true
+
 ***********************************************
 *Thank you to Byuu for the wonderful emulator!*
 *{please visit byuu.org for more info}        *
