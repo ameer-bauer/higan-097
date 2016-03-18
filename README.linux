@@ -1,6 +1,6 @@
-*******************
-*Build Requirments*
-*******************
+********************
+*Build Requirements*
+********************
 
 Some Library Requirements for Building (Listed as Debian Packages Below)
 -----
@@ -52,7 +52,7 @@ Enjoy this awesome emulator by running:
  higan
 
 The icon for higan is located at:
- /home/<user that buildt higan>/.local/share/icons/higan.png
+ /home/<user that built higan>/.local/share/icons/higan.png
 
 NOTE:More reliable audio results seem to come with using
      "PulseAudioSimple" in the "Advanced Configurations".
@@ -65,7 +65,7 @@ NOTE:In testing, the OpenGL and SDL modes seem to be the best performing,
 NOTE:Higan loads its startup configurations from the following file:
      /home/<user that built higan>/.local/higan/settings.bml
      You can modify the video mode here, or just clear the value, if an
-     incompatible video mode is selected and higan crashes on statrup.
+     incompatible video mode is selected and higan crashes on startup.
 
 **************
 *Make Options*
@@ -81,7 +81,7 @@ NOTE:The default emulation profile is set to 'accuracy'.
 
 Change the Compiler Version
 ----
-Run the folling command to use your current version of g++:
+Run the following command to use your current version of g++:
  make compiler=g++
 
 Enable Higan Console Mode
@@ -94,7 +94,7 @@ NOTE:Optionally, before making higan, uncomment the "console:=true" line
 
 Example Make Options
 ----
-Compile higan with a 'balanced' emultion profile with console support
+Compile higan with a 'balanced' emulation profile with console support
 from the higan-097/higan/ directory run:
  make profile=balanced console=true
 
