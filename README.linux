@@ -27,10 +27,14 @@ From higan-0.97/icarus/ run:
 Running Higan
 -----
 Add The following directories to your path:
- /home/<user that built higan>/.local
+ /home/<user that built higan>/.local/higan
  /home/<user that built higan>/.local/bin
 
 Enjoy this awesome emulator by running:
  higan
- 
-Thank you to Byuu for the wonderful emulator! <byuu.org>
+
+The icon for higan is located at:
+ /home/<user that buildt higan>/.local/share/icons/higan.png
+
+Thank you to Byuu for the wonderful emulator!
+{visit byuu.org for more info}
