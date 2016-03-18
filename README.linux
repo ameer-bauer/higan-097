@@ -1,3 +1,7 @@
+*******************
+*Build Requirments*
+*******************
+
 Some Library Requirements for Building (Listed as Debian Packages Below)
 -----
 g++-4.9
@@ -9,35 +13,45 @@ libao-dev
 libopenal-dev
 libpulse-dev
 
-NOTE:You have to build both higan and icarus for this emulator to function.
-     Once built, use the icarus tool to import your ROMs to the higan preferred format.
+NOTE:You have to build both higan and icarus for this emulator to
+     function.  Once built, use the icarus tool to import your ROMs
+     to the higan preferred format.
 
-Build Instructions for Higan (Emulator)
+*******************
+*Build and Install*
+*******************
+
+1) Build Instructions for Higan (Emulator)
 -----
 From higan-0.97/higan/ run:
  make
  make install
 
-Build Instructions for Icarus (ROM Import Tool)
+2) Build Instructions for Icarus (ROM Import Tool)
 -----
 From higan-0.97/icarus/ run:
  make
  make install
 
-Running Higan
+3) Add Paths for Higan and Icarus
 -----
 Add The following directories to your path:
  /home/<user that built higan>/.local/higan
  /home/<user that built higan>/.local/bin
 
+NOTE:The higan emulator will not properly work unless you install
+     both higan and icarus, and then adding the appropriate paths.
+
+4) Running Higan
+----
 Enjoy this awesome emulator by running:
  higan
 
 The icon for higan is located at:
  /home/<user that buildt higan>/.local/share/icons/higan.png
 
-NOTE:More reliable audio results seem to come with using "PulseAudioSimple"
-     in the "Advanced Configurations".
+NOTE:More reliable audio results seem to come with using
+     "PulseAudioSimple" in the "Advanced Configurations".
      (assuming you are using PulseAudio in your environment)
 
 **************
@@ -56,6 +70,8 @@ Enable Higan Console Mode
 ----
 Before making higan, uncomment the "console:=true" line in:
  higan-097/higan/GNUMakefile
-
-Thank you to Byuu for the wonderful emulator!
-{visit byuu.org for more info}
+ 
+***********************************************
+*Thank you to Byuu for the wonderful emulator!*
+*{please visit byuu.org for more info}        *
+***********************************************
