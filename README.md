@@ -1,6 +1,8 @@
 # higan-0.97
-Post of Byuu's NES, SNES, GB, GBC, and GBA emulator higan v0.97; focused on emulation accuracy.
 ----
+Post of Byuu's NES, SNES, GB, GBC, and GBA emulator higan v0.97,
+focused on emulation accuracy.
+
 General Info:
 Higan is a Nintendo Multi-system Emulator Supports the Following Systems:
  Famicom
