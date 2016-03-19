@@ -12,10 +12,6 @@ libsdl1.2-dev
 libao-dev
 libopenal-dev
 libpulse-dev
-
-NOTE:g++ 4.9 is optional if you have g++ > 4.7 and change the make flags;
-     see make options towards the end of this document.  These build
-     procedures have been tested with g++ 4.9.
      
 NOTE:You have to build both higan and icarus for this emulator to
      function.  Once built, use the icarus tool to import your ROMs
@@ -78,11 +74,6 @@ Run one of the following make commands from higan-097/higan/:
  make profile=performance
 
 NOTE:The default emulation profile is set to 'accuracy'.
-
-Change the Compiler Version
-----
-Run the following command to use your current version of g++:
- make compiler=g++
 
 Enable Higan Console Mode
 ----
