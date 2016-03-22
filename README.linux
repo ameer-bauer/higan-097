@@ -9,6 +9,7 @@ libgtk2.0-dev
 libgtksourceview2.0-dev
 libxv-dev
 libudev-dev
+libgl1-mesa-dev (or appropriate GL lib for your video card)
 libsdl1.2-dev
 libao-dev
 libopenal-dev
@@ -63,6 +64,10 @@ NOTE:Higan loads its startup configurations from the following file:
      /home/<user that built higan>/.local/higan/settings.bml
      You can modify the video mode here, or just clear the value, if an
      incompatible video mode is selected and higan crashes on startup.
+
+NOTE:The initial load of an SNES game in higan may not have an input set.
+     To fix this, simply load a game, click on the "Super Famicom" menu
+     -> Select "Controller Port 1" -> Select an input source.
 
 **************
 *Make Options*
