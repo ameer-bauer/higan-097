@@ -9,7 +9,7 @@ libgtk2.0-dev
 libgtksourceview2.0-dev
 libxv-dev
 libudev-dev
-libgl1-mesa-dev (or appropriate GL lib for your video card)
+libgl1-mesa-dev (or the appropriate OpenGL library for your video card)
 libsdl1.2-dev
 libao-dev
 libopenal-dev
