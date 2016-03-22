@@ -16,8 +16,8 @@ libopenal-dev
 libpulse-dev
      
 NOTE:You have to build both higan and icarus for this emulator to
-     function.  Once built, use the icarus tool to import your ROMs
-     to the higan preferred format.
+     function.  Once built, use the icarus tool to convert your ROMs
+     into the higan preferred format.
 
 *******************
 *Build and Install*
