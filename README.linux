@@ -14,10 +14,6 @@ libsdl1.2-dev
 libao-dev
 libopenal-dev
 libpulse-dev
-     
-NOTE:You have to build both higan and icarus for this emulator to
-     function.  Once built, use the icarus tool to convert your ROMs
-     into the higan preferred format.
 
 *******************
 *Build and Install*
@@ -46,6 +42,10 @@ NOTE:The higan emulator will not properly work unless you install
 
 4) Running Higan
 ----
+NOTE:You have to build both higan and icarus for this emulator to
+     function.  Once built, use the icarus tool to convert your ROMs
+     into the higan preferred format.
+
 Enjoy this awesome emulator by running:
  higan
 
