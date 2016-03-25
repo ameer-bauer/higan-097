@@ -1,0 +1,20 @@
+diff --git a/nall/GNUmakefile b/nall/GNUmakefile
+index c327113..b87965a 100644
+--- a/nall/GNUmakefile
++++ b/nall/GNUmakefile
+@@ -51,9 +51,13 @@ ifeq ($(compiler),)
+   else ifeq ($(platform),macosx)
+     compiler := clang++
+   else ifeq ($(platform),linux)
+-    compiler := g++-4.9
++    compiler := g++
++    cppflags += `pkg-config cairo --cflags`
++    link += `pkg-config cairo --libs`
+   else ifeq ($(platform),bsd)
+-    compiler := g++49
++    compiler := g++
++    cppflags += `pkg-config cairo --cflags`
++    link += `pkg-config cairo --libs`
+   else
+     compiler := g++
+   endif
