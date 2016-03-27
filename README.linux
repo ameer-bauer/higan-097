@@ -4,9 +4,9 @@
 
 Some Library Requirements for Building (Listed as Debian Packages Below)
 -----
-NOTE:If you do not wish to install g++ 4.9, or ar having an issue compiling with
-     g++, apply the nix-build-changes.patch file and try again; tested on Arch
-     Linux and should work on most BSD systems. {Thanks Akita!}
+NOTE:If you do not wish to install g++ 4.9, or are having an issue compiling
+     with g++, apply the nix-build-changes.patch file and try again; tested
+     on Arch Linux and should work on most BSD systems. {Thanks Akita!}
 
 g++-4.9
 libgtk2.0-dev
@@ -48,7 +48,15 @@ NOTE:The higan emulator will not properly work unless you install
 ----
 NOTE:You have to build both higan and icarus for this emulator to
      function.  Once built, use the icarus tool to convert your ROMs
-     into the higan preferred format.
+     into the higan preferred format.  If you have errors using icarus
+     to import SNES ROMs, due to missing or invalid platform ROMs, the
+     SNES_coprocessor_ROMs.zip file has all of the extra platform ROMs
+     in it.  Simply take note of which files are missing (according to
+     icarus), extract your SNES game ROM into a new directory, copy 
+     the appropriate co-processor ROM file(s) into that directory, and
+     then use icarus to import the ".smc" file from the directory 
+     containing the extracted game and co-processor files.  The game
+     should now import correctly.
 
 Enjoy this awesome emulator by running:
  higan
