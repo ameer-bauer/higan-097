@@ -55,8 +55,16 @@ NOTE:You have to build both higan and icarus for this emulator to
      icarus), extract your SNES game ROM into a new directory, copy 
      the appropriate co-processor ROM file(s) into that directory, and
      then use icarus to import the ".smc" file from the directory 
-     containing the extracted game and co-processor files.  The game
+     containing the extracted game and co-processor files.  The game(s)
      should now import correctly.
+
+NOTE:To run GBA ROMs a GBA BIOS must first be installed.
+     a) Extract the Game Boy Advance (W).gba file from GBA_BIOS.zip and
+     simply drag the ".gba" file onto the main higan window to install
+     the bios file.
+     -OR-
+     b) Extract the bios.rom file from the GBA_BIOS.zip file into:
+     /home/<user that built higan>/.local/higan/Game Boy Advanced.sys/
 
 Enjoy this awesome emulator by running:
  higan
