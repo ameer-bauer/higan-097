@@ -6,8 +6,10 @@ Some Library Requirements for Building (Listed as Debian Packages Below)
 -----
 NOTE:If you do not wish to install g++ 4.9, or are having an issue compiling
      with g++, apply the nix-build-changes.patch file and try again; tested
-     on Arch Linux and should work on most BSD systems.  Note that your g++
-     compiler must fully support C++14.  {Thanks Akita!}
+     on Arch Linux and should work on most BSD systems.
+     **IMPORTANT: Your g++ compiler must fully support C++14 for this patch 
+     to work.**
+     {Thanks Akita!}
 
 g++-4.9
 libgtk2.0-dev
