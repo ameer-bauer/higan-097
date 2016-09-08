@@ -11,7 +11,7 @@ NOTE:If you do not wish to install g++ 4.9, or are having an issue compiling
      to work.**
      {Thanks Akita!}
 
-g++-4.9
+g++-4.9 (or higher)
 libgtk2.0-dev
 libgtksourceview2.0-dev
 libxv-dev
