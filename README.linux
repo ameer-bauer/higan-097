@@ -40,7 +40,7 @@ From higan-0.97/icarus/ run:
 
 3) Add Paths for Higan and Icarus
 -----
-Add The following directories to your path:
+Add The following directories to your path (/etc/environment in Mint):
  /home/<user that built higan>/.local/higan
  /home/<user that built higan>/.local/bin
 
